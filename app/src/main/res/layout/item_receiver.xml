@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewReceiverMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/shape_receiver"
+        android:lineSpacingExtra="7dp"
+        android:maxWidth="220dp"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="10dp"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="I'm watching Latest Movie on Tv What are you doing?" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewReceiverTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="02;05"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/textViewReceiverMessage"
+        app:layout_constraintTop_toBottomOf="@+id/textViewReceiverMessage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

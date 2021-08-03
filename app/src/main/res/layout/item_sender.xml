@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewSenderMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/shape_sender"
+        android:lineSpacingExtra="7dp"
+        android:maxWidth="220dp"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="10dp"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="I'm watching Latest Movie on Tv What are you doing?" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewSenderTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="02;05"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/textViewSenderMessage"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSenderMessage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
