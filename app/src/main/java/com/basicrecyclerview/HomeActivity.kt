@@ -13,18 +13,18 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
-        setTitle("Multi-ViewHolder RecyclerView")
-        replaceFragment(HomeFragment())
+        setTitle("View-Binding RecyclerView")
+        replaceFragment(SearchFragment())
         bottomNavigationView.setOnItemSelectedListener {
             return@setOnItemSelectedListener when (it.itemId) {
                 R.id.homeMenu -> {
-                    setTitle("Multi-ViewHolder RecyclerView")
-                    replaceFragment(HomeFragment())
+                    setTitle("View-Binding RecyclerView")
+                    replaceFragment(SearchFragment())
                     true
                 }
                 R.id.searchMenu -> {
-                    setTitle("Search Fragment")
-                    replaceFragment(SearchFragment())
+                    setTitle("Multi-ViewHolder RecyclerView")
+                    replaceFragment(HomeFragment())
                     true
                 }
                 R.id.profileMenu -> {
@@ -37,7 +37,7 @@ class HomeActivity : AppCompatActivity() {
         }
     }
 
-   private fun setTitle(title:String){
+    private fun setTitle(title: String) {
         toolBar.title = if (title.isEmpty()) "Bottom NavigationView" else title
     }
 

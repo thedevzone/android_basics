@@ -5,9 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.basicrecyclerview.R
-import com.basicrecyclerview.model.Dummy
 import com.basicrecyclerview.model.Message
-import kotlinx.android.synthetic.main.item_layout.view.*
 import kotlinx.android.synthetic.main.item_receiver.view.*
 import kotlinx.android.synthetic.main.item_sender.view.*
 

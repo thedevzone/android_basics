@@ -5,10 +5,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.basicrecyclerview.R
-import com.basicrecyclerview.model.Dummy
+import com.basicrecyclerview.model.User
 import kotlinx.android.synthetic.main.item_layout.view.*
 
-class DummyAdapter(private val list:ArrayList<Dummy>):RecyclerView.Adapter<DummyAdapter.ViewHolder>() {
+class DummyAdapter(private val list:ArrayList<User>):RecyclerView.Adapter<DummyAdapter.ViewHolder>() {
 
     inner class ViewHolder(v:View):RecyclerView.ViewHolder(v)
 
